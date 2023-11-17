@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+#logo {
+  height: 60px;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: gold;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+#navbar a:not(:hover) {
+  transition: 0.3s;
+}
+
+#headlp {
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px lightslategray;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-inner img {
+    max-width: 100%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+.cardMain {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  max-width: 200px;
+  margin: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  flex-flow: 22.22%;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px lightgray;    
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.add-to-cart {
+  background-color: #4caf50;
+}
+
+.button.buy {
+  background-color: #3498db;
+}
+
+#section {
+  border: 1px solid black;
+}
+
+.anchorcss:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.anchorcss:not(:hover)
+{
+  transition: 0.3s;
+}
+
+.badge
+{
+  background-color: red;
+  color: black;
+}
+
+#DynamicBtnCss
+{
+    display: block;
+    margin: 20px auto; /* Center vertically and horizontally */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 1px solid black;
+    background-color: transparent;
+    max-width: 60%;
+}
+
+#DynamicBtnCss:hover
+{
+  background-color: black;
+  color: white;
+}
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  display: block;
+  z-index: 1;
+  /* display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    max-width: 60%; 
+    position: relative;
+    z-index: 1;  */
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

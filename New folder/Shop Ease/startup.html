@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Page</title>
+  <style>
+    #welcomeText {
+      text-align: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcomeText"></div>
+
+<script>
+    window.onload = function() {
+  var welcomeText = document.getElementById('welcomeText');
+  var messages = [
+    "Discover a world of choice and convenience—your destination for seamless shopping.",
+    "Join our thriving community, showcase your products, and amplify your reach effortlessly."
+  ];
+  var index = 0;
+  var words = [];
+  var wordIndex = 0;
+
+  function showWords() {
+    if (wordIndex < words.length) {
+      welcomeText.textContent += words[wordIndex] + ' ';
+      wordIndex++;
+      setTimeout(showWords, 200);
+    } else {
+      setTimeout(function() {
+        welcomeText.textContent = '';
+        index = (index + 1) % messages.length;
+        words = messages[index].split(' ');
+        wordIndex = 0;
+        setTimeout(showWords, 300);
+      }, 1000);
+    }
+  }
+
+  words = messages[index].split(' ');
+  showWords();
+};
+
+</script>
+</body>
+</html>

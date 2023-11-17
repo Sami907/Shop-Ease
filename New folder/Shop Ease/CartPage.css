@@ -1,0 +1,51 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 1px 1px 7px lightgray;
+}
+
+.product-image {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.product-details {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.quantity {
+    margin-top: 5px;
+    color: #888;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+    margin-right: 20px;
+}
+
+#btnRemove {
+    border: none;
+    background-color: lightcoral;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 1px 1px 10px lightcoral;
+}
+
+#btnRemove:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#btnRemove:not(:hover) {
+    transition: 0.3s;
+}

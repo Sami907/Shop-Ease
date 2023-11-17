@@ -1,0 +1,34 @@
+<script>
+  // URL of the API endpoint
+const apiUrl = 'https://localhost:44380/api/GetUser?UserId=1';
+
+// Function to make the API request
+function fetchData() {
+  debugger
+  alert('')
+  fetch(`https://localhost:44380/api/GetUser?UserId=${1}`)
+      .then(response => response.json())
+      .then(json => console.log("check data",json))
+  // fetch(apiUrl)
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error('Network response was not ok.');
+  //     }
+  //     return response.json();
+  //   })
+  //   .then(data => {
+  //     // Handle the data received from the API
+  //     console.log("data",data)
+  //     alert('Data from the API:', data);
+  //     // You can perform further operations with the data here
+  //   })
+  //   .catch(error => {
+  //     // Handle any errors that occurred during the fetch
+  //     console.error('There was a problem fetching the data:', error);
+  //   });
+}
+
+// Call the function to initiate the API request
+fetchData();
+
+</script>

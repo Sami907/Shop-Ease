@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6355/6355121.png">
+    <link rel="stylesheet" href="SellerRegistration.css">  
+</head>
+<body id="bdy">
+   <div id="main">
+        <h2>Create Your Seller Account</h2>
+        <input type="text" id="txtFirstName" placeholder="Enter First Name" onkeypress="RemoveBorder(this.id,false)">
+        <input type="text" id="txtLastName" placeholder="Enter Last Name" onkeypress="RemoveBorder(this.id,false)">
+        <input type="text" id="txtContactNo" placeholder="Enter Contact No" onkeypress="RemoveBorder(this.id,false)">
+        <input type="text" id="txtEmail" placeholder="Enter Email" onkeypress="RemoveBorder(this.id,false)">
+        <input type="text" id="txtPassword" placeholder="Enter Password" onkeypress="RemoveBorder(this.id,false)">
+
+        <select id="country" onchange="RemoveBorder(this.id,true)">
+          <option value="0" class="opt">Select Country</option>
+          <option value="1" class="opt">Pakistan</option>
+          <option value="2" class="opt">Canada</option>
+        </select>
+
+        <select id="Gender" onchange="RemoveBorder(this.id,true)">
+          <option value="0" class="opt">Select Gender</option>
+          <option value="1" class="opt">Male</option>
+          <option value="2" class="opt">Female</option>
+        </select>
+
+        <select id="Month" onchange="RemoveBorder(this.id,true)">
+          <option value="0" class="opt">Select Month</option>
+          <option value="1" class="opt">January</option>
+          <option value="2" class="opt">Februry</option>
+          <option value="3" class="opt">March</option>
+          <option value="4" class="opt">April</option>
+          <option value="5" class="opt">May</option>
+          <option value="6" class="opt">June</option>
+          <option value="7" class="opt">July</option>
+          <option value="8" class="opt">Augest</option>
+          <option value="9" class="opt">September</option>
+          <option value="10" class="opt">Octuber</option>
+          <option value="11" class="opt">November</option>
+          <option value="12" class="opt">December</option>
+        </select>
+
+        <select id="Day" onchange="RemoveBorder(this.id,true)">
+          <option value="0" class="opt">Select Day</option>
+        </select>
+
+        <select id="Year" onchange="RemoveBorder(this.id,true)">
+          <option value="0" class="opt">Select Year</option>
+        </select>
+
+        <button id="btnReg" onclick="RegisterNow()">Register Now</button>        
+   </div>
+   
+   <script src="SellerRegistration.js"></script>   
+</body>
+</html>
+

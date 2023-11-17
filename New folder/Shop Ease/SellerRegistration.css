@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url(https://img.freepik.com/free-photo/full-length-view-excited-slim-woman-with-store-bags_197531-16467.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#main {
+    height: 80%;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px lightgray;
+    left: 290px;
+    position: absolute;;
+    top: 60px;
+    background-color: white;
+}
+
+h2
+{
+    top:10px;
+    left: 20px;
+    position: absolute;
+}
+
+#txtFirstName
+{
+    top: 80px;
+    position: absolute;
+    left: 20px;
+    width: 370px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#txtLastName
+{
+    top: 80px;
+    position: absolute;
+    left: 420px;
+    width: 370px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#txtContactNo
+{
+    top: 150px;
+    position: absolute;
+    left: 20px;
+    width: 370px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#txtEmail
+{
+    top: 150px;
+    position: absolute;
+    left: 420px;
+    width: 370px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#txtPassword
+{
+    top: 313px;
+    position: absolute;
+    left: 20px;
+    width: 370px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#country
+{
+    top: 230px;
+    position: absolute;
+    left: 20px;
+    width: 377px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+.opt
+{
+    background-color: whitesmoke;
+  font-size: medium;
+}
+
+#Gender
+{
+    top: 229px;
+    position: absolute;
+    left: 420px;
+    width: 377px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#Month
+{
+    top: 314px;
+    position: absolute;
+    left: 420px;
+    width: 140px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#Day
+{
+    top: 314px;
+    position: absolute;
+    left: 570px;
+    width: 90px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#Year
+{
+    top: 314px;
+    position: absolute;
+    left: 670px;
+    width: 90px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    height: 40px;   
+}
+
+#btnReg
+{
+    top: 400px;
+    position: absolute;
+    left: 200px;
+    width: 377px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: black;
+    height: 40px;   
+    color: white;
+}
+
+#btnReg:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 20px 10px 10px lightslategray;
+    transition: 0.3s;
+}
+
+#btnReg:not(:hover)
+{
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    #main {
+        width: 80%; 
+        left: 10px; 
+    }
+    #txtFirstName, #txtLastName, #txtContactNo, #txtEmail, #txtPassword,#Day,#Year,#Month
+    ,#btnReg,#country,#Gender {
+        width: 100%;
+        left: 0;
+    }
+}
